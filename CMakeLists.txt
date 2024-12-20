@@ -98,7 +98,7 @@ if(BUILD_DEBUG)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fno-strict-aliasing -O0 -DDEBUG -g -Wall -Wno-unused-but-set-variable")
     message("-- Building type: DEBUG")
 else(BUILD_DEBUG)
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fno-strict-aliasing -O2 -DNDEBUG")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fno-strict-aliasing -O3 -DNDEBUG")
     message("-- Building type: RELEASE")
 endif(BUILD_DEBUG)
 
